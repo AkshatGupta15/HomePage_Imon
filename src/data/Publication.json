@@ -127,10 +127,12 @@
       "link": "http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4545046"
     }
   ],
-  "thesis": {
+  "thesis": [
+  {
     "title": "Wideband Tunable True-Time-Delay Architecture Using a Variable Order All-Pass Filter and its Applications to Continuous-Time Pulse Processing",
     "link": "Imon_Thesis.pdf"
-  },
+  }
+],
   "patents": [
     {
       "title": "Tunable true-time-delay element using a variable order all-pass filter",

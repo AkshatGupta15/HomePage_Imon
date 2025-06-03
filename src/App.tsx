@@ -5,6 +5,7 @@ import { HomePage } from "./pages/Homepage";
 import Layout from "./layout";
 import  PublicationsPage  from "./pages/publications";
 import { TeachingPage } from "./pages/teachings";
+import GroupPage from "./pages/group";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         </Layout>
       }
       />
-      {/* <Route path="/group" element={<GroupPage />} /> */}
+      <Route path="/group" element={<Layout><GroupPage /></Layout>} />
       <Route path="/publication" element={<Layout>
         <PublicationsPage />
       </Layout>} />

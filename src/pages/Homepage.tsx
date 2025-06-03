@@ -1,11 +1,91 @@
 import { AnimatedGridPatternDemo } from "@/components/custom/background";
-
-
+import { motion } from "framer-motion";
 
 export function HomePage() {
   return (
-    <div className="w-full py-4">
-      <AnimatedGridPatternDemo />
+    <div className="w-full">
+      <div className="mb-10">
+        <AnimatedGridPatternDemo />
+      </div>
+      <div className="md:px-0 px-6">
+        <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="max-w-4xl mx-auto space-y-6 text-justify break-words" 
+      >
+        <p className="text-lg leading-relaxed lora-regular-400">
+          I am an assistant professor in the Microelectronics and VLSI group of the
+          department of Electrical Engineering in the Indian Institute of
+          Technology Kanpur and a member of the{' '}
+          <a
+            href="https://iitk.ac.in/sscd"
+            className="text-blue-600 underline hover:text-blue-800"
+          >
+            solid-state circuit design lab
+          </a>.
+          I work in the area of analog integrated circuit design primarily aimed at signal
+          processing. Due to my interest in teaching analog circuits, and to
+          ensure its reach beyond classrooms, I record my lectures for public viewing.
+          You can access them{' '}
+          <a
+            href="https://iitk.ac.in/sscd/Teaching.html"
+            className="text-blue-600 underline hover:text-blue-800"
+          >
+            here
+          </a>.
+        </p>
+
+        <p className="text-lg leading-relaxed lora-regular-400">
+          I obtained my Ph.D. from IIT Madras under Prof. Nagendra Krishnapura,
+          working on tunable true-time-delay elements in ICs. I received my M.Tech from IIT Kanpur (2007)
+          and B.Tech from Kalyani Govt. Engineering College (2005). I have worked at
+          Cypress Semiconductor on power management circuits for non-volatile SRAMs.
+        </p>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="max-w-5xl mx-auto mt-12 bg-gray-50 p-6 rounded-xl shadow-md space-y-4"
+      >
+        <h2 className="text-xl font-semibold text-center">News & Updates</h2>
+        <div className="space-y-3 text-sm text-left leading-relaxed">
+          <p><b>Jan 2025:</b> <i>Aasif's paper titled "An LPTV Programmable Bandpass True-time-Delay Line Without External Clock-Phase Shifter" accepted at ISCAS 2025. Congratulations Aasif!</i></p>
+          <p><b>Dec 2024:</b> <i>Harish joins the group for MSR. Welcome!</i></p>
+          <p><b>Aug 2024:</b> <i>Aadil joins the group for Ph.D. Welcome!</i></p>
+          <p><b>Aug 2023:</b> <i>Aasif and Mayank's papers accepted at APCCAS 2023. Congratulations!</i></p>
+          <p><b>July 2023:</b> <i>Kunal and Vibhor defend M.Tech thesis. Congrats!</i></p>
+          <p><b>July 2023:</b> <i>Sushil awarded Proficiency Medal. Kudos!</i></p>
+         
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
+        className="max-w-5xl mx-auto mt-12 p-6 grid md:grid-cols-2 gap-8 text-sm text-gray-800"
+      >
+        <div className="space-y-2">
+          <h3 className="font-semibold text-lg">Coordinates</h3>
+          <p>WL-211, Electrical Engineering, IIT Kanpur</p>
+          <p>Kanpur, Uttar Pradesh, India, 208016</p>
+          <p>Phone: 0512 679-7732</p>
+          <p>Email: <a href="mailto:imon@iitk.ac.in" className="text-blue-600">imon@iitk.ac.in</a></p>
+        </div>
+        <div className="space-y-2">
+          <h3 className="font-semibold text-lg">Other Links</h3>
+          <ul className="list-disc list-inside">
+            <li><a href="#" className="text-blue-600 hover:underline">Research Interests</a></li>
+            <li><a href="#" className="text-blue-600 hover:underline">Call for Research Students</a></li>
+          </ul>
+        </div>
+      </motion.div>
+      </div>
+
+      
     </div>
   );
 }

@@ -4,7 +4,6 @@ import {
   Navbar,
   NavBody,
   MobileNav,
-  NavbarLogo,
   NavbarButton,
   MobileNavHeader,
   MobileNavToggle,
@@ -26,10 +25,10 @@ export function CustomNavbar({ prop }: { prop?: ReactNode }) {
 
   return (
     <div className="relative w-full">
-      <Navbar>
+      <Navbar className="fixed top-4 left-0 w-full z-50 ">
         <NavBody>
-          <NavbarLogo />
-          <div className="flex gap-6">
+          {/* <NavbarLogo /> */}
+          <div className="flex gap-8 w-full">
             {navItems.map((item, idx) =>
               item.external ? (
                 <a
@@ -37,7 +36,7 @@ export function CustomNavbar({ prop }: { prop?: ReactNode }) {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm font-medium text-gray-600 hover:text-black"
+                  className="text-md lora-bold-400 text-gray-800 hover:text-black"
                 >
                   {item.name}
                 </a>
@@ -45,7 +44,7 @@ export function CustomNavbar({ prop }: { prop?: ReactNode }) {
                 <Link
                   key={idx}
                   to={item.link}
-                  className="text-sm font-medium text-gray-600 hover:text-black"
+                  className="text-md lora-bold-400 text-gray-800 hover:text-black"
                 >
                   {item.name}
                 </Link>
@@ -53,14 +52,14 @@ export function CustomNavbar({ prop }: { prop?: ReactNode }) {
             )}
           </div>
           <div className="flex items-center gap-4">
-            <NavbarButton variant="secondary">Login</NavbarButton>
-            <NavbarButton variant="primary">Book a call</NavbarButton>
+            <NavbarButton variant="secondary" className="lora-bold-500 text-md">Contact</NavbarButton>
+            {/* <NavbarButton variant="primary">Book a call</NavbarButton> */}
           </div>
         </NavBody>
 
         <MobileNav>
           <MobileNavHeader>
-            <NavbarLogo />
+            {/* <NavbarLogo /> */}
             <MobileNavToggle
               isOpen={isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -98,25 +97,19 @@ export function CustomNavbar({ prop }: { prop?: ReactNode }) {
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
-                className="w-full"
+                className="w-full lora-bold-500 text-md"
               >
-                Login
+                Contact
               </NavbarButton>
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Book a call
-              </NavbarButton>
+      
             </div>
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
 
-        <div className="w-full flex-grow">
-            {prop}
-        </div>
+      <div className="w-full flex-grow mt-14">
+        {prop}
+      </div>
 
 
 

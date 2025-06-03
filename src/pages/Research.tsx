@@ -1,6 +1,4 @@
 "use client";
-import React from "react";
-// Update the import path below to the correct relative path if needed
 import { StickyScroll } from "../components/ui/sticky-scroll-reveal";
 
 
@@ -54,7 +52,7 @@ const content = [
 ];
 export function Research() {
   return (
-    <div className="w-full py-4">
+    <div className="w-full py-4 h-screen">
       <StickyScroll content={content} />
     </div>
   );

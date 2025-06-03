@@ -1,8 +1,10 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { motion } from "motion/react";
 import {
-  ComponentPropsWithoutRef,
+  type ComponentPropsWithoutRef,
   useEffect,
   useId,
   useRef,
@@ -34,7 +36,7 @@ export function AnimatedGridPattern({
   className,
   maxOpacity = 0.5,
   duration = 4,
-  repeatDelay = 0.5,
+  // repeatDelay = 0.5,
   ...props
 }: AnimatedGridPatternProps) {
   const id = useId();
@@ -81,7 +83,7 @@ export function AnimatedGridPattern({
   // Resize observer to update container dimensions
   useEffect(() => {
     const resizeObserver = new ResizeObserver((entries) => {
-      for (let entry of entries) {
+      for (const entry of entries) {
         setDimensions({
           width: entry.contentRect.width,
           height: entry.contentRect.height,

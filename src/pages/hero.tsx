@@ -3,7 +3,7 @@ import { BoxReveal } from "@/components/magicui/box-reveal";
 
 export function Hero() {
   return (
-    <div className="flex flex-col items-center justify-center gap-6 pt-8 sm:flex-row sm:gap-12 max-w-5xl mx-auto">
+    <div className="flex flex-col items-center justify-center gap-6 pt-8 sm:flex-row sm:gap-12 max-w-5xl mx-auto lora-regular-400">
       {/* Image Section */}
       <BoxReveal boxColor={"#5046e6"} duration={0.5}>
         <div className="overflow-hidden rounded-2xl shadow-xl w-48 h-48 sm:w-60 sm:h-60 relative">
@@ -16,7 +16,7 @@ export function Hero() {
       </BoxReveal>
 
       {/* Text Section */}
-      <div className="flex flex-col items-start justify-center max-w-xl">
+      <div className="flex flex-col sm:items-start items-center justify-center max-w-xl">
         <BoxReveal boxColor={"#5046e6"} duration={0.5}>
           <p className="text-[2.5rem] sm:text-[3.5rem] font-semibold">
             Imon Mondal<span className="text-[#5046e6]">.</span>
@@ -24,14 +24,14 @@ export function Hero() {
         </BoxReveal>
 
         <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-          <h2 className="mt-1 text-[1rem] sm:text-[1.2rem] leading-snug text-start">
+          <h2 className="mt-1 text-[1rem] sm:text-[1.2rem] leading-snug sm:text-start text-center">
             Assistant Professor, Electrical Engineering <br></br>
             Indian Institute of Technology Kanpur
           </h2>
         </BoxReveal>
 
         <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-          <div className="mt-4 text-sm sm:text-base text-muted-foreground text-start">
+          <div className="mt-4 text-sm sm:text-base text-muted-foreground sm:text-start text-center">
             <p>
               I work on analog integrated circuit design for signal processing
               and actively share my lectures for open learning.

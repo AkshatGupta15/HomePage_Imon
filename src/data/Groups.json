@@ -1,0 +1,142 @@
+{
+  "PhD": [
+    {
+      "name": "Mohmad Aasif Bhat",
+      "email": "aasif@iitk.ac.in",
+      "profileUrl": "https://home.iitk.ac.in/~aasif/",
+      "researchArea": "Wideband delay lines and mm-wave power amplifiers.",
+      "image": ""
+    },
+    {
+      "name": "Pankaj Rahi",
+      "email": "pankajiitk20@iitk.ac.in",
+      "profileUrl": "",
+      "researchArea": "Widely tunable receivers.",
+      "image": ""
+    },
+    {
+      "name": "Mayank Anupam",
+      "email": "mayank21@iitk.ac.in",
+      "profileUrl": "https://home.iitk.ac.in/~mayank21/",
+      "researchArea": "High frequency filter",
+      "image": ""
+    },
+    {
+      "name": "Aadil Bashir",
+      "email": "aadilb24@iitk.ac.in",
+      "profileUrl": "",
+      "researchArea": "TBD",
+      "image": ""
+    }
+  ],
+  "MSR": [
+    {
+      "name": "Harshit Rathore",
+      "email": "harshml@iitk.ac.in",
+      "profileUrl": "https://home.iitk.ac.in/~harshml/",
+      "researchArea": "Blocker tolerant N-path filters with enhanced linearity.",
+      "image": ""
+    },
+    {
+      "name": "Abhishek Kumar",
+      "email": "abhishekkr20@iitk.ac.in",
+      "profileUrl": "https://home.iitk.ac.in/~abhishekkr20/",
+      "researchArea": "RoIC for bolometer FPAs.",
+      "image": ""
+    },
+    {
+      "name": "Sameer Kumar",
+      "email": "sameerk21@iitk.ac.in",
+      "profileUrl": "https://www.linkedin.com/in/sameer-kumar-125576218",
+      "researchArea": "Switch capacitance insensitive n-path Rx",
+      "image": ""
+
+    },
+    {
+      "name": "Harish Ravichandran",
+      "email": "harishr24@iitk.ac.in",
+      "profileUrl": "",
+      "researchArea": "TBD",
+      "image": ""
+    }
+  ],
+  "MTechDual": [
+    {
+      "name": "Anurag Tiwari",
+      "email": "anuragt23@iitk.ac.in",
+      "researchArea": "Transmitter for sub GHz, low BoM, IoT applications.",
+      "image": ""
+    },
+    {
+      "name": "Gyan Prakash",
+      "email": "gyanp23@iitk.ac.in",
+      "researchArea": "Sensor interface",
+      "image": ""
+    },
+    {
+      "name": "Amit Chaneja",
+      "email": "amitc23@iitk.ac.in",
+      "researchArea": "Mixer first Rx for wideband applications",
+      "image": ""
+    },
+    {
+      "name": "Piyush Kumar",
+      "email": "piyushk22@iitk.ac.in",
+      "researchArea": "Transmitter for sub GHz, low BoM, IoT applications.",
+      "image": ""
+    }
+  ],
+  "Alumni": {
+    "MTechDual": [
+      {
+        "name": "Kastoori Prashanth",
+        "destination": "Samsung Research"
+      },
+      {
+        "name": "Anteshwar Omnath Chimadge",
+        "destination": "Intel"
+      },
+      {
+        "name": "M. Parthasarathi",
+        "destination": "Google"
+      },
+      {
+        "name": "Kautuk Ghosle",
+        "destination": "AAI"
+      },
+      {
+        "name": "Nitish Kumar",
+        "destination": "Texas Instruments"
+      },
+      {
+        "name": "Sushil Bishnoi",
+        "destination": "Texas Instruments"
+      },
+      {
+        "name": "Kaustubh Pabba",
+        "destination": "Columbia (for Ph.D)"
+      },
+      {
+        "name": "Vinayak Agrawal",
+        "destination": "Ixana"
+      },
+      {
+        "name": "S. Narayana Rao",
+        "destination": "Intel"
+      },
+      {
+        "name": "Kunal Paradkar",
+        "destination": "Texas Instruments"
+      },
+      {
+        "name": "Vibhor Sharma",
+        "destination": "Texas Instruments"
+      },
+      {
+        "name": "Pritesh Kumar",
+        "destination": "BITS Pilani, Hyderabad Campus",
+        "profileUrl": "https://www.bits-pilani.ac.in/hyderabad/dr-pritesh-kumar-yadav/"
+      }
+    ]
+  }
+}
