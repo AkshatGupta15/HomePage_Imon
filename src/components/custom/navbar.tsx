@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from "react";
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 import {
   Navbar,
   NavBody,
@@ -23,6 +23,7 @@ export function CustomNavbar({ prop }: { prop?: ReactNode }) {
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <div className="relative w-full">
@@ -30,27 +31,34 @@ export function CustomNavbar({ prop }: { prop?: ReactNode }) {
         <NavBody>
           {/* <NavbarLogo /> */}
           <div className="flex gap-8 w-full">
-            {navItems.map((item, idx) =>
-              item.external ? (
-                <a
-                  key={idx}
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-md lora-bold-400 text-gray-800 hover:text-black"
-                >
-                  {item.name}
-                </a>
-              ) : (
-                <Link
-                  key={idx}
-                  to={item.link}
-                  className="text-md lora-bold-400 text-gray-800 hover:text-black"
-                >
-                  {item.name}
-                </Link>
-              )
-            )}
+            {navItems.map((item, idx) => {
+  const isActive = location.pathname === item.link;
+
+  return item.external ? (
+    <a
+      key={idx}
+      href={item.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`text-md lora-bold-400 hover:text-black ${
+        isActive ? "text-black underline" : "text-gray-800"
+      }`}
+    >
+      {item.name}
+    </a>
+  ) : (
+    <Link
+      key={idx}
+      to={item.link}
+      className={`text-md lora-bold-400 hover:text-black ${
+        isActive ? "text-black underline " : "text-gray-800"
+      }`}
+    >
+      {item.name}
+    </Link>
+  );
+})}
+
           </div>
           <div className="flex items-center gap-4">
           <NavbarLogo />
@@ -67,35 +75,44 @@ export function CustomNavbar({ prop }: { prop?: ReactNode }) {
               isOpen={isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             />
+            <NavbarLogo />
+
           </MobileNavHeader>
 
           <MobileNavMenu
             isOpen={isMobileMenuOpen}
             onClose={() => setIsMobileMenuOpen(false)}
           >
-            {navItems.map((item, idx) =>
-              item.external ? (
-                <a
-                  key={`mobile-link-${idx}`}
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="relative text-neutral-600 dark:text-neutral-300"
-                >
-                  <span className="block">{item.name}</span>
-                </a>
-              ) : (
-                <Link
-                  key={`mobile-link-${idx}`}
-                  to={item.link}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="relative text-neutral-600 dark:text-neutral-300"
-                >
-                  <span className="block">{item.name}</span>
-                </Link>
-              )
-            )}
+            {navItems.map((item, idx) => {
+  const isActive = location.pathname === item.link;
+
+  return item.external ? (
+    <a
+      key={`mobile-link-${idx}`}
+      href={item.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={() => setIsMobileMenuOpen(false)}
+      className={`relative block text-md ${
+        isActive ? "text-black underline" : "text-neutral-600"
+      }`}
+    >
+      {item.name}
+    </a>
+  ) : (
+    <Link
+      key={`mobile-link-${idx}`}
+      to={item.link}
+      onClick={() => setIsMobileMenuOpen(false)}
+      className={`relative block text-md ${
+        isActive ? "text-black underline" : "text-neutral-600"
+      }`}
+    >
+      {item.name}
+    </Link>
+  );
+})}
+
             <div className="flex w-full flex-col gap-4">
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}

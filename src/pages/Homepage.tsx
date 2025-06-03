@@ -49,7 +49,7 @@ export function HomePage() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="max-w-5xl mx-auto mt-12 bg-gray-50 p-6 rounded-xl shadow-md space-y-4"
+        className="max-w-5xl mx-auto mt-12  p-6  space-y-4"
       >
         <h2 className="text-xl lora-bold-500 ">News & Updates</h2>
         {/* <AutoScrollingNews/> */}
@@ -72,15 +72,17 @@ export function HomePage() {
         className="max-w-5xl mx-auto mt-12 p-6 grid md:grid-cols-2 gap-8 text-sm text-gray-800"
       >
         <div className="space-y-2">
-          <h3 className="font-semibold text-lg">Coordinates</h3>
-          <p>WL-211, Electrical Engineering, IIT Kanpur</p>
+          <h3 className="font-semibold text-xl lora-bold-500">Coordinates</h3>
+          <div className="lora-regular-400">
+            <p>WL-211, Electrical Engineering, IIT Kanpur</p>
           <p>Kanpur, Uttar Pradesh, India, 208016</p>
           <p>Phone: 0512 679-7732</p>
           <p>Email: <a href="mailto:imon@iitk.ac.in" className="text-blue-600">imon@iitk.ac.in</a></p>
+          </div>
         </div>
         <div className="space-y-2">
-          <h3 className="font-semibold text-lg">Other Links</h3>
-          <ul className="list-disc list-inside">
+          <h3 className="font-semibold text-xl lora-bold-500">Other Links</h3>
+          <ul className="list-disc list-inside lora-regular-400">
             <li><a href="#" className="text-blue-600 hover:underline">Research Interests</a></li>
             <li><a href="#" className="text-blue-600 hover:underline">Call for Research Students</a></li>
           </ul>
