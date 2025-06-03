@@ -41,7 +41,7 @@ export function CustomNavbar({ prop }: { prop?: ReactNode }) {
       target="_blank"
       rel="noopener noreferrer"
       className={`text-md lora-bold-400 hover:text-black ${
-        isActive ? "text-black underline" : "text-gray-800"
+        isActive ? "text-black underline underline-offset-2" : "text-gray-800"
       }`}
     >
       {item.name}
@@ -51,7 +51,7 @@ export function CustomNavbar({ prop }: { prop?: ReactNode }) {
       key={idx}
       to={item.link}
       className={`text-md lora-bold-400 hover:text-black ${
-        isActive ? "text-black underline " : "text-gray-800"
+        isActive ? "text-black underline  underline-offset-2" : "text-gray-800"
       }`}
     >
       {item.name}
@@ -94,7 +94,7 @@ export function CustomNavbar({ prop }: { prop?: ReactNode }) {
       rel="noopener noreferrer"
       onClick={() => setIsMobileMenuOpen(false)}
       className={`relative block text-md ${
-        isActive ? "text-black underline" : "text-neutral-600"
+        isActive ? "text-black underline underline-offset-2" : "text-neutral-600"
       }`}
     >
       {item.name}
@@ -105,7 +105,7 @@ export function CustomNavbar({ prop }: { prop?: ReactNode }) {
       to={item.link}
       onClick={() => setIsMobileMenuOpen(false)}
       className={`relative block text-md ${
-        isActive ? "text-black underline" : "text-neutral-600"
+        isActive ? "text-black underline underline-offset-2" : "text-neutral-600"
       }`}
     >
       {item.name}

@@ -19,7 +19,7 @@ const sectionVariants = {
 const Section = ({ title, people }: {title: string , people: any }) => (
   <div>
     <h2 className="text-2xl lora-bold-500 text-gray-900 mb-6">{title}</h2>
-    <ul className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+    <ul className="grid gap-x-4 gap-y-10 sm:grid-cols-3 lg:grid-cols-4">
       {people.map((person: any , index: number) => (
         <motion.li
           key={person.name}
@@ -102,7 +102,7 @@ export default function GroupPage() {
 
 
   return (
-    <div className="bg-white py-12 sm:py-16 px-6 lg:px-8 max-w-7xl mx-auto space-y-20">
+    <div className="bg-white py-12 sm:py-16 px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
       <div>
         <h1 className="text-3xl lora-bold-500 text-gray-900 mb-4">Meet Our Team</h1>
         <p className="text-lg text-gray-600 lora-regular-400">
