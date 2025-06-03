@@ -8,6 +8,7 @@ import {
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
+  NavbarLogo,
 } from "@/components/ui/resizable-navbar";
 
 export function CustomNavbar({ prop }: { prop?: ReactNode }) {
@@ -52,7 +53,9 @@ export function CustomNavbar({ prop }: { prop?: ReactNode }) {
             )}
           </div>
           <div className="flex items-center gap-4">
-            <NavbarButton variant="secondary" className="lora-bold-500 text-md">Contact</NavbarButton>
+          <NavbarLogo />
+
+            {/* <NavbarButton variant="secondary" className="lora-bold-500 text-md">Contact</NavbarButton> */}
             {/* <NavbarButton variant="primary">Book a call</NavbarButton> */}
           </div>
         </NavBody>

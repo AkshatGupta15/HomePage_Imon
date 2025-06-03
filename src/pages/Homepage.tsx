@@ -1,5 +1,6 @@
 import { AnimatedGridPatternDemo } from "@/components/custom/background";
 import { motion } from "framer-motion";
+import data from "@/data/news.json";
 
 export function HomePage() {
   return (
@@ -50,14 +51,16 @@ export function HomePage() {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="max-w-5xl mx-auto mt-12 bg-gray-50 p-6 rounded-xl shadow-md space-y-4"
       >
-        <h2 className="text-xl font-semibold text-center">News & Updates</h2>
-        <div className="space-y-3 text-sm text-left leading-relaxed">
-          <p><b>Jan 2025:</b> <i>Aasif's paper titled "An LPTV Programmable Bandpass True-time-Delay Line Without External Clock-Phase Shifter" accepted at ISCAS 2025. Congratulations Aasif!</i></p>
-          <p><b>Dec 2024:</b> <i>Harish joins the group for MSR. Welcome!</i></p>
-          <p><b>Aug 2024:</b> <i>Aadil joins the group for Ph.D. Welcome!</i></p>
-          <p><b>Aug 2023:</b> <i>Aasif and Mayank's papers accepted at APCCAS 2023. Congratulations!</i></p>
-          <p><b>July 2023:</b> <i>Kunal and Vibhor defend M.Tech thesis. Congrats!</i></p>
-          <p><b>July 2023:</b> <i>Sushil awarded Proficiency Medal. Kudos!</i></p>
+        <h2 className="text-xl lora-bold-500 ">News & Updates</h2>
+        {/* <AutoScrollingNews/> */}
+        <div className="space-y-3 text-sm text-left leading-relaxed overflow-scroll h-80">
+          {data.map((item, index) => (
+            <div key={index} className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
+              
+              <p className="text-gray-600 lora-regular-400"><span className="text-md lora-bold-500 text-gray-800">{item.date}</span> : {item.text}</p>
+              
+            </div>
+          ))}
          
         </div>
       </motion.div>

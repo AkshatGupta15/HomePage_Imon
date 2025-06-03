@@ -5,28 +5,28 @@
       "email": "aasif@iitk.ac.in",
       "profileUrl": "https://home.iitk.ac.in/~aasif/",
       "researchArea": "Wideband delay lines and mm-wave power amplifiers.",
-      "image": ""
+      "image": "https://oa.cc.iitk.ac.in/Oa/Jsp/Photo/19104271_0.jpg" 
     },
     {
       "name": "Pankaj Rahi",
       "email": "pankajiitk20@iitk.ac.in",
       "profileUrl": "",
       "researchArea": "Widely tunable receivers.",
-      "image": ""
+      "image": "https://oa.cc.iitk.ac.in/Oa/Jsp/Photo/20104297_0.jpg"
     },
     {
       "name": "Mayank Anupam",
       "email": "mayank21@iitk.ac.in",
       "profileUrl": "https://home.iitk.ac.in/~mayank21/",
       "researchArea": "High frequency filter",
-      "image": ""
+      "image": "https://oa.cc.iitk.ac.in/Oa/Jsp/Photo/21104279_0.jpg"
     },
     {
       "name": "Aadil Bashir",
       "email": "aadilb24@iitk.ac.in",
       "profileUrl": "",
       "researchArea": "TBD",
-      "image": ""
+      "image": "https://oa.cc.iitk.ac.in/Oa/Jsp/Photo/241040601_0.jpg"
     }
   ],
   "MSR": [
@@ -35,21 +35,21 @@
       "email": "harshml@iitk.ac.in",
       "profileUrl": "https://home.iitk.ac.in/~harshml/",
       "researchArea": "Blocker tolerant N-path filters with enhanced linearity.",
-      "image": ""
+      "image": "https://oa.cc.iitk.ac.in/Oa/Jsp/Photo/19104404_0.jpg"
     },
     {
       "name": "Abhishek Kumar",
       "email": "abhishekkr20@iitk.ac.in",
       "profileUrl": "https://home.iitk.ac.in/~abhishekkr20/",
       "researchArea": "RoIC for bolometer FPAs.",
-      "image": ""
+      "image": "https://oa.cc.iitk.ac.in/Oa/Jsp/Photo/20204402_0.jpg"
     },
     {
       "name": "Sameer Kumar",
       "email": "sameerk21@iitk.ac.in",
       "profileUrl": "https://www.linkedin.com/in/sameer-kumar-125576218",
       "researchArea": "Switch capacitance insensitive n-path Rx",
-      "image": ""
+      "image": "https://home.iitk.ac.in/~sameerk21/dp"
 
     },
     {
@@ -65,25 +65,25 @@
       "name": "Anurag Tiwari",
       "email": "anuragt23@iitk.ac.in",
       "researchArea": "Transmitter for sub GHz, low BoM, IoT applications.",
-      "image": ""
+      "image": "https://oa.cc.iitk.ac.in/Oa/Jsp/Photo/231040022_0.jpg"
     },
     {
       "name": "Gyan Prakash",
       "email": "gyanp23@iitk.ac.in",
       "researchArea": "Sensor interface",
-      "image": ""
+      "image": "https://oa.cc.iitk.ac.in/Oa/Jsp/Photo/231040051_0.jpg"
     },
     {
       "name": "Amit Chaneja",
       "email": "amitc23@iitk.ac.in",
       "researchArea": "Mixer first Rx for wideband applications",
-      "image": ""
+      "image": "https://oa.cc.iitk.ac.in/Oa/Jsp/Photo/231040011_0.jpg"
     },
     {
       "name": "Piyush Kumar",
       "email": "piyushk22@iitk.ac.in",
       "researchArea": "Transmitter for sub GHz, low BoM, IoT applications.",
-      "image": ""
+      "image": "https://oa.cc.iitk.ac.in/Oa/Jsp/Photo/22104069_0.jpg"
     }
   ],
   "Alumni": {

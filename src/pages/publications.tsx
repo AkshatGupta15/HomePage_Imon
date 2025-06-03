@@ -2,16 +2,6 @@
 import data from "../data/Publication.json";
 import { motion } from "framer-motion";
 
-function formatAuthors(authors?: string[]): string {
-  if (!Array.isArray(authors) || authors.length === 0) return "";
-
-  if (authors.length === 1) return authors[0];
-  if (authors.length === 2) return `${authors[0]} and ${authors[1]}`;
-  if (authors.length <= 3) return `${authors.slice(0, -1).join(", ")} and ${authors[authors.length - 1]}`;
-  
-  return `${authors.slice(0, 3).join(", ")} et al.`;
-}
-
 export default function PublicationsPage() {
     
 
@@ -44,8 +34,15 @@ const Section = ({ title, items }: { title: string; items: any[] }) => (
       {items.map((item: any, index: number) => (
         <li key={index} className="lora-regular-400">
           <p className="text-md">
-            {formatAuthors(item.authors)}, "{item.title}",{" "}
-            <span className="text-gray-600">{item.venue}</span>, {item.year}.
+            {item.text}
+            {item.link && (
+              <a href={item.link} className="text-blue-600 hover:underline ml-1">
+                [PAPER]
+              </a>
+            )}
+            {/* <span className="text-[#5046e6]">{item.link}</span> */}
+            {/* {formatAuthors(item.authors)}, "{item.title}",{" "}
+            <span className="text-gray-600">{item.venue}</span>, {item.year}. */}
           </p>
         </li>
       ))}

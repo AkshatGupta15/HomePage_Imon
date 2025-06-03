@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import { Research } from "./pages/Research";
+import { ResearchPage } from "./pages/Research";
 import { HomePage } from "./pages/Homepage";
 import Layout from "./layout";
 import  PublicationsPage  from "./pages/publications";
@@ -18,7 +18,7 @@ function App() {
       />
       <Route path="/research" element={
         <Layout>
-          <Research />
+          <ResearchPage />
         </Layout>
       }
       />

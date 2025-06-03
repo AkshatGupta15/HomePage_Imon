@@ -18,7 +18,7 @@ const sectionVariants = {
 
 const Section = ({ title, people }: {title: string , people: any }) => (
   <div>
-    <h2 className="text-2xl font-semibold text-gray-900 mb-6">{title}</h2>
+    <h2 className="text-2xl lora-bold-500 text-gray-900 mb-6">{title}</h2>
     <ul className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
       {people.map((person: any , index: number) => (
         <motion.li
@@ -30,24 +30,29 @@ const Section = ({ title, people }: {title: string , people: any }) => (
           variants={sectionVariants}
         >
           <div className="flex items-center gap-x-6">
-            <img
-              alt={person.name}
-              src={person.image || '/images/avatar-default.svg'}
-              className="size-16 rounded-full object-cover"
-            />
+           <div
+  className="w-16 h-16 rounded-full bg-cover bg-center"
+  style={{
+    backgroundImage: `
+      url(${person.image}),
+      url(/images/avatar-default.svg)
+    `
+  }}
+/>
+
             <div>
-              <h3 className="text-base font-semibold tracking-tight text-gray-900">
+              <h3 className="text-base tracking-tight text-gray-900 lora-bold-500">
                 {person.name}
               </h3>
               {person.role && <p className="text-sm font-semibold text-indigo-600">{person.role}</p>}
-              {person.researchArea && <p className="text-sm text-gray-600">{person.researchArea}</p>}
+              {person.researchArea && <p className="text-sm text-gray-600 lora-regular-400">{person.researchArea}</p>}
               {person.email && (
-                <p className="text-sm text-blue-600">
+                <p className="text-sm text-blue-600 lora-regular-400">
                   <a href={`mailto:${person.email}`}>{person.email}</a>
                 </p>
               )}
               {person.profileUrl && (
-                <p className="text-sm text-blue-500 underline">
+                <p className="text-sm text-blue-500 underline lora-regular-400">
                   <a href={person.profileUrl} target="_blank" rel="noopener noreferrer">
                     Profile
                   </a>
@@ -63,8 +68,8 @@ const Section = ({ title, people }: {title: string , people: any }) => (
 
 const AlumniSection = ({ alumni }: {alumni: any}) => (
   <div>
-    <h2 className="text-2xl font-semibold text-gray-900 mb-6">Alumni (MTech Dual)</h2>
-    <ul className="space-y-4">
+    <h2 className="text-2xl text-gray-900 mb-6 lora-bold-500">Alumni (MTech Dual)</h2>
+    <ul className="space-y-3">
       {alumni.map((alum : any, index: number) => (
         <motion.li
           key={alum.name}
@@ -74,7 +79,7 @@ const AlumniSection = ({ alumni }: {alumni: any}) => (
           viewport={{ once: true }}
           variants={sectionVariants}
         >
-          <p className="text-base font-medium text-gray-900">
+          <p className="text-base font-medium text-gray-900 lora-bold-500">
             {alum.name} - <span className="text-gray-600">{alum.destination}</span>
             {alum.profileUrl && (
               <a
@@ -97,10 +102,10 @@ export default function GroupPage() {
 
 
   return (
-    <div className="bg-white py-24 sm:py-32 px-6 lg:px-8 max-w-7xl mx-auto space-y-20">
+    <div className="bg-white py-12 sm:py-16 px-6 lg:px-8 max-w-7xl mx-auto space-y-20">
       <div>
-        <h1 className="text-4xl font-bold text-gray-900 mb-6">Meet Our Team</h1>
-        <p className="text-lg text-gray-600">
+        <h1 className="text-3xl lora-bold-500 text-gray-900 mb-4">Meet Our Team</h1>
+        <p className="text-lg text-gray-600 lora-regular-400">
           Explore the members of our research group and their work areas.
         </p>
       </div>

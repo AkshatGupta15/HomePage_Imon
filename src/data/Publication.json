@@ -1,145 +1,78 @@
 {
   "conferences": [
     {
-      "authors": ["Mohmad Aasif Bhat", "Imon Mondal"],
-      "title": "An LPTV Programmable Bandpass True-time-Delay Line Without External Clock-Phase Shifter",
-      "conference": "Proc. 2025 IEEE ISCAS",
-      "location": "London",
-      "year": 2025,
+      "text": "Mohmad Aasif Bhat and Imon Mondal, \"An LPTV Programmable Bandpass True-time-Delay Line Without External Clock-Phase Shifter,\" To appear in Proc. 2025 IEEE ISCAS, London, 2025.",
       "link": null
     },
     {
-      "authors": ["Mohmad Aasif Bhat", "Imon Mondal"],
-      "title": "A Low-Loss, Compact Wideband True-Time-Delay Line for Sub-6GHz Applications using N-Path Filters",
-      "conference": "Proc. 2023 IEEE APCCAS",
-      "location": "Hyderabad, India",
-      "year": 2023,
+      "text": "Mohmad Aasif Bhat and Imon Mondal, \"A Low-Loss, Compact Wideband True-Time-Delay Line for Sub-6GHz Applications using N-Path Filters,\" Proc. 2023 IEEE APCCAS, Hyderabad, India, 2023.",
       "link": "https://ieeexplore.ieee.org/abstract/document/10509961/"
     },
     {
-      "authors": ["Mayank Anupam", "Imon Mondal"],
-      "title": "A Robust Overdesign Prevention Circuit Technique Under Widely Varying Ambient Conditions",
-      "conference": "Proc. 2023 IEEE APCCAS",
-      "location": "Hyderabad, India",
-      "year": 2023,
+      "text": "Mayank Anupam and Imon Mondal, “A Robust Overdesign Prevention Circuit Technique Under Widely Varying Ambient Conditions,\" Proc. 2023 IEEE APCCAS, Hyderabad, India, 2023.",
       "link": "https://ieeexplore.ieee.org/abstract/document/10509907"
     },
     {
-      "authors": ["Abhishek Kumar", "Shubham Sahay", "Imon Mondal"],
-      "title": "An Automatic Leakage Compensation Technique for Capacitively Coupled Class-AB Operational Amplifiers",
-      "conference": "2023 IEEE ISCAS",
-      "location": "Monterey, CA, USA",
-      "year": 2023,
+      "text": "Abhishek Kumar, Shubham Sahay and Imon Mondal, \"An Automatic Leakage Compensation Technique for Capacitively Coupled Class-AB Operational Amplifiers,\" 2023 IEEE ISCAS, Monterey, CA, USA, 2023.",
       "link": "https://ieeexplore.ieee.org/abstract/document/10181688"
     },
     {
-      "authors": ["Mayank Anupam", "Harshit Rathore", "Imon Mondal"],
-      "title": "Bandwidth-Enhanced Feedforward Amplifier with Shared Class-AB Gain and Compensation Paths",
-      "conference": "Proc. 2022 IEEE ISCAS",
-      "location": "Austin, USA",
-      "year": 2022,
+      "text": "Mayank Anupam, Harshit Rathore and Imon Mondal, “Bandwidth-Enhanced Feedforward Amplifier with Shared Class-AB Gain and Compensation Paths,” Proc. 2022 IEEE ISCAS, Austin, USA.",
       "link": "https://ieeexplore.ieee.org/document/9937883"
     },
     {
-      "authors": ["Harshit Rathore", "Imon Mondal"],
-      "title": "Breaking the trade-off between bandwidth and close-in blocker attenuation in an N-path filter",
-      "conference": "Proc. 2021 IEEE ISCAS",
-      "location": "Daegu, Korea",
-      "year": 2021,
+      "text": "Harshit Rathore and Imon Mondal, “Breaking the trade-off between bandwidth and close-in blocker attenuation in an N-path filter,” Proc. 2021 IEEE ISCAS, Daegu, Korea, 2021.",
       "link": "https://ieeexplore.ieee.org/document/9401459"
     },
     {
-      "authors": ["Imon Mondal"],
-      "title": "Analysis and comparison of distortion of Miller and feed-forward opamps in negative feedback",
-      "conference": "2020 IEEE ISCAS",
-      "location": "Sevilla",
-      "year": 2020,
+      "text": "Imon Mondal, “Analysis and comparison of distortion of Miller and feed-forward opamps in negative feedback,” 2020 IEEE ISCAS, Sevilla, 2020.",
       "link": "https://ieeexplore.ieee.org/document/9180534"
     },
     {
-      "authors": ["Imon Mondal"],
-      "title": "Effect of circuit non-idealities on active on-chip delay lines",
-      "conference": "2019 IEEE ISCAS",
-      "location": "Sapporo, Japan",
-      "year": 2019,
+      "text": "Imon Mondal, “Effect of circuit non-idealities on active on-chip delay lines,” 2019 IEEE ISCAS, Sapporo, Japan, May 2019.",
       "link": "https://ieeexplore.ieee.org/abstract/document/8701882"
     },
     {
-      "authors": ["Imon Mondal", "Nagendra Krishnapura"],
-      "title": "Linearity and gain enhanced wideband transconductor using digitally auto-tuned negative conductance load",
-      "conference": "2018 IEEE ISCAS",
-      "location": "Florence, Italy",
-      "year": 2018,
+      "text": "Imon Mondal and Nagendra Krishnapura, “Linearity and gain enhanced wideband transconductor using digitally auto-tuned negative conductance load,” 2018 IEEE ISCAS, Florence, Italy, May 2018.",
       "link": "https://ieeexplore.ieee.org/abstract/document/8351317"
     },
     {
-      "authors": ["Imon Mondal", "Nagendra Krishnapura"],
-      "title": "Gain enhanced high frequency OTA with on-chip tuned negative conductance load",
-      "conference": "2015 IEEE ISCAS",
-      "location": "Lisbon, Portugal",
-      "year": 2015,
+      "text": "Imon Mondal and Nagendra Krishnapura, “Gain enhanced high frequency OTA with on-chip tuned negative conductance load,” 2015 IEEE ISCAS, Lisbon, Portugal, May 2015.",
       "link": "http://ieeexplore.ieee.org/document/7169089/"
     },
     {
-      "authors": ["Imon Mondal", "Nagendra Krishnapura"],
-      "title": "Accurate constant transconductance generation without off-chip components",
-      "conference": "28th International Conference on VLSI Design",
-      "location": "Bangalore, India",
-      "year": 2015,
+      "text": "Imon Mondal and Nagendra Krishnapura, “Accurate constant transconductance generation without off-chip components,” 28th International Conference on VLSI Design, Bangalore, India, Jan. 2015.",
       "link": "http://ieeexplore.ieee.org/document/7031741/"
     }
   ],
   "journals": [
     {
-      "authors": ["Imon Mondal", "Nagendra Krishnapura"],
-      "title": "Effects of AC Response Imperfections in True-Time-Delay Lines",
-      "journal": "IEEE Transactions on Circuits and Systems II: Express Briefs",
-      "doi": "10.1109/TCSII.2020.3027529",
+      "text": "Imon Mondal and Nagendra Krishnapura, “Effects of AC Response Imperfections in True-Time-Delay Lines,” IEEE TCAS II.",
       "link": "https://ieeexplore.ieee.org/document/9209153/"
     },
     {
-      "authors": ["Imon Mondal", "Nagendra Krishnapura"],
-      "title": "Expansion and compression of analog pulses using bandwidth switching of continuous-time filters",
-      "journal": "IEEE Transactions on Circuits and Systems I: Regular Papers",
-      "volume": 65,
-      "pages": "2703-2714",
-      "year": 2018,
+      "text": "Imon Mondal and Nagendra Krishnapura, “Expansion and compression of analog pulses using bandwidth switching of continuous-time filters,” IEEE TCAS I, vol 65, pp. 2703-2714, Feb. 2018.",
       "link": "http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8287809/"
     },
     {
-      "authors": ["Imon Mondal", "Nagendra Krishnapura"],
-      "title": "A 2 GHz bandwidth, 0.25-1.7 ns true-time-delay element using a variable-order all-pass filter architecture in 0.13 μm CMOS",
-      "journal": "IEEE Journal of Solid-State Circuits",
-      "volume": 52,
-      "issue": 8,
-      "pages": "2180-2193",
-      "year": 2017,
+      "text": "Imon Mondal and Nagendra Krishnapura, “A 2 GHz bandwidth, 0.25-1.7 ns true-time-delay element using a variable-order all-pass filter architecture in 0.13 μm CMOS,” IEEE JSSC, vol. 52, no. 8, pp. 2180-2193, Aug. 2017.",
       "link": "http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7935368/"
     },
     {
-      "authors": ["Imon Mondal", "Aloke Dutta"],
-      "title": "An analytical gate tunneling current model for MOSFETs having ultrathin gate oxides",
-      "journal": "IEEE Transactions on Electron Devices",
-      "volume": 55,
-      "issue": 7,
-      "pages": "1282-1292",
-      "year": 2008,
+      "text": "Imon Mondal and Aloke Dutta, “An analytical gate tunneling current model for MOSFETs having ultrathin gate oxides,” IEEE TED, vol.55, no. 7, pp. 1282-1292, 2008.",
       "link": "http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4545046"
     }
   ],
   "thesis": [
-  {
-    "title": "Wideband Tunable True-Time-Delay Architecture Using a Variable Order All-Pass Filter and its Applications to Continuous-Time Pulse Processing",
-    "link": "Imon_Thesis.pdf"
-  }
-],
+    {
+      "text": "Ph.D. thesis: Wideband Tunable True-Time-Delay Architecture Using a Variable Order All-Pass Filter and its Applications to Continuous-Time Pulse Processing.",
+      "link": "https://home.iitk.ac.in/~imon/Imon_Thesis.pdf"
+    }
+  ],
   "patents": [
     {
-      "title": "Tunable true-time-delay element using a variable order all-pass filter",
-      "status": "Patent pending",
-      "authors": ["Imon Mondal", "Nagendra Krishnapura"],
-      "application_number": "201741014751",
-      "country": "India"
+      "text": "Patent pending: Imon Mondal and Nagendra Krishnapura, \"Tunable true-time-delay element using a variable order all-pass filter.\" India patent application #201741014751.",
+      "link": null
     }
   ]
 }
