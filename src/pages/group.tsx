@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 
 import data from '../data/Groups.json';
+import { SEO } from '@/components/custom/seo_helmet';
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -105,6 +106,11 @@ export default function GroupPage() {
 
   return (
     <div className="bg-white py-12 sm:py-16 px-6 lg:px-8 max-w-5xl mx-auto space-y-16">
+      <SEO
+  title="Group | Imon Mondal"
+  description="Meet the students and collaborators of Prof. Mondal."
+  path="/group"
+/>
       <div>
         <h1 className="text-3xl lora-bold-500 text-gray-900 mb-4">Meet Our Team</h1>
         <p className="text-lg text-gray-600 lora-regular-400">

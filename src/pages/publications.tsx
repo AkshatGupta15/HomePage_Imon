@@ -1,10 +1,16 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { SEO } from "@/components/custom/seo_helmet";
 import data from "../data/Publication.json";
 import { motion } from "framer-motion";
 
 export default function PublicationsPage() {
   return (
     <div className="max-w-5xl mx-auto p-6 bg-white">
+      <SEO
+  title="Publications | Imon Mondal"
+  description="Research papers and publications by Prof. Imon Mondal."
+  path="/publication"
+/>
       {/* <h1 className="text-3xl font-bold text-gray-900 mb-8 lora-bold-700 uppercase text-center">
         Publications
       </h1> */}

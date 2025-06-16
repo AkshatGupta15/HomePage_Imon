@@ -1,9 +1,16 @@
 import { motion } from 'framer-motion';
 import ContactForm from './contactPage';
+import { SEO } from '@/components/custom/seo_helmet';
 
 const ResearchStudentsPage = () => {
   return (
     <div className="w-full py-8 min-h-screen ">
+        <SEO
+  title="Call for Research Students | Imon Mondal"
+  description="Interested in analog and RFIC research? Apply to work with Prof. Mondal."
+  path="/call-for-students"
+/>
+
       <article className="max-w-5xl mx-auto px-6 py-8 bg-white rounded-xl shadow-md">
         {/* Page Title */}
         <motion.h1 

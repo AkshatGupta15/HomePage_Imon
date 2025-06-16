@@ -1,9 +1,15 @@
 import { motion } from "framer-motion";
 import projectData from "../data/projects.json";
+import { SEO } from "@/components/custom/seo_helmet";
 
 export default function ProjectsSection() {
   return (
     <div className="max-w-6xl mx-auto px-6 py-12 bg-white">
+      <SEO
+  title="Projects | Imon Mondal"
+  description="Funded and ongoing projects in RF and analog circuit design."
+  path="/project"
+/>
       <motion.h2
         className="text-3xl font-bold mb-10 text-gray-900 uppercase text-center lora-bold-700"
         initial={{ opacity: 0, y: -20 }}

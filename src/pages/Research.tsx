@@ -1,8 +1,16 @@
 import { motion } from "framer-motion";
 import data from "../data/Research.json";
+import { SEO } from "@/components/custom/seo_helmet";
+
+
 export function ResearchPage() {
   return (
     <div className="max-w-5xl container mx-auto px-4 py-10 md:w-[80%] w-full ">
+      <SEO
+  title="Research | Imon Mondal"
+  description="Explore Prof. Mondal's research in analog and RFIC design."
+  path="/research"
+/>
       <motion.div
         className="mb-10"
         initial={{ opacity: 0, y: -20 }}

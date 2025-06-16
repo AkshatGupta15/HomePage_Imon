@@ -1,10 +1,16 @@
 import { motion } from "framer-motion";
 import lectures from "../data/lectures.json";
 import courses from "../data/courses.json";
+import { SEO } from "@/components/custom/seo_helmet";
 
 export function TeachingPage() {
   return (
     <div className="max-w-screen-5xl py-4 min-h-screen">
+      <SEO
+  title="Teaching | Imon Mondal"
+  description="Lecture series, grading, and materials for EE698L and other courses."
+  path="/teaching"
+/>
       <main className="container mx-auto px-6 py-10">
         {/* Courses Section */}
         <motion.section

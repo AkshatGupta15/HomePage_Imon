@@ -2,10 +2,12 @@ import { AnimatedGridPatternDemo } from "@/components/custom/background";
 import { motion } from "framer-motion";
 import data from "@/data/news.json";
 import ContactForm from "./contactPage";
+import { SEO } from "@/components/custom/seo_helmet";
 
 export function HomePage() {
   return (
     <div className="w-full">
+      <SEO title="Imon Mondal | IIT Kanpur" description="Homepage of Prof. Imon Mondal, IIT Kanpur." path="/" />
       <div className="mb-10">
         <AnimatedGridPatternDemo />
       </div>

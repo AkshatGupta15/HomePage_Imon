@@ -3,7 +3,6 @@ import { useState, useEffect, memo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Types
-
 type CarouselItem = {
   image: string;
   text: string;
