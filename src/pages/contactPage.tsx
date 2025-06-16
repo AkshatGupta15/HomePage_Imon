@@ -87,11 +87,11 @@ const ContactForm = () => {
 
    return (
     <div className="p-4">
-      <div className="grid lg:grid-cols-2 items-start gap-12 p-8 mx-auto max-w-5xl max-lg:max-w-2xl bg-white [box-shadow:0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md">
+      <div className="grid lg:grid-cols-2 items-start gap-12  p-4  md:p-8 max-w-5xl max-lg:max-w-2xl max-sm:max-w-md mx-auto bg-white [box-shadow:0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md">
         {/* Left Side - Contact Info */}
         <div>
-          <h2 className="text-slate-900 text-3xl font-bold uppercase lora-bold-700">Contact</h2>
-          <p className="text-[15px] text-slate-600 mt-4 leading-relaxed lora-regular-400">
+          <h2 className="text-slate-900 text-2xl md:text-3xl font-bold uppercase lora-bold-700">Contact</h2>
+          <p className="text-xs sm:text-sm md:text-lg text-slate-600 mt-4 leading-relaxed lora-regular-400">
             Feel free to reach out by visiting my office,
              dropping an email, or submitting the contact
               form to get in touch regarding research, projects, or collaborations.
@@ -134,10 +134,11 @@ const ContactForm = () => {
         </div>
 
         {/* Right Side - Form */}
-         <form
+        <div className=''>
+<form
       ref={formRef}
       onSubmit={handleSubmit}
-      className="space-y-4"
+      className="space-y-4 max-w-2xl w-full px-0 sm:px-6 mx-auto "
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
         <div>
@@ -196,6 +197,8 @@ const ContactForm = () => {
         Send Message
       </button>
     </form>
+        </div>
+         
       </div>
     </div>
   );

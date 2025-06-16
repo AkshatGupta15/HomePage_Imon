@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
                 </div>
 
                 {/* Left Column - Navigation Links in 2 columns */}
-                <div className="md:col-span-1 lg:col-span-1 mt-10">
+                <div className="md:col-span-1 lg:col-span-1 md:mt-10">
                     <div className="grid grid-cols-2 gap-4 text-sm">
                         <ul className="space-y-2">
                             <li><a href="/" className="hover:text-indigo-400 transition-colors">Home</a></li>
@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
                 {/* Middle Column - Research Call */}
                 <div className="md:col-span-1 lg:col-span-1">
                     <h5 className="font-semibold lora-bold-500 text-md mb-4 text-white">Research Opportunities</h5>
-                    <p className="text-slate-400 mb-4 text-sm">
+                    <p className="text-slate-300 mb-4 text-xs md:text-sm">
                         If you're passionate about RFIC Design, Signal Processing, or related areas, reach out with your CV. Undergraduate, postgraduate, and research collaboration opportunities are open.
                     </p>
                     <a

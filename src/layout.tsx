@@ -2,6 +2,7 @@ import { type ReactNode, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { CustomNavbar } from "./components/custom/navbar";
 import LoadingOverlay from "./components/custom/LoadingOverlay";
+import Footer from "./components/custom/footer";
 
 interface LayoutProps {
   children: ReactNode;
@@ -28,10 +29,11 @@ export default function Layout({ children }: LayoutProps) {
       >
         {children}
       </main>
-      <footer className="bg-[#f5f5f5] text-center py-4 text-sm text-gray-600">
+      {/* <footer className="bg-[#f5f5f5] text-center py-4 text-sm text-gray-600">
         Copyright &copy; {new Date().getFullYear()} Indian Institute of Technology Kanpur.
         All rights reserved.
-      </footer>
+      </footer> */}
+      <Footer/>
     </div>
   );
 }
