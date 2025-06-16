@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import projectData from "../data/projects.json";
+import projectData from "../data/Projects.json";
 import { SEO } from "@/components/custom/seo_helmet";
 
 export default function ProjectsSection() {
