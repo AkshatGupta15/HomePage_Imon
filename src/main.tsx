@@ -5,9 +5,11 @@ import App from './App.tsx'
 import { BrowserRouter } from 'react-router-dom'
 import { HelmetProvider } from "react-helmet-async";
 
+const base = import.meta.env.BASE_URL
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={base}>
      <HelmetProvider>
       <App />
      </HelmetProvider>

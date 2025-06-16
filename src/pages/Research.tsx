@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import data from "../data/Research.json";
 import { SEO } from "@/components/custom/seo_helmet";
+import { getFullImageUrl } from "@/utils/getFullImageUrl";
 
 
 export function ResearchPage() {
@@ -46,7 +47,7 @@ export function ResearchPage() {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <img
-              src={project.image}
+              src={getFullImageUrl(project.image)}
               alt={project.title}
               className="w-full md:w-1/3 rounded-lg object-cover shadow-md"
             />

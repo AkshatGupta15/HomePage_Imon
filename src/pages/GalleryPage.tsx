@@ -21,6 +21,7 @@ type GalleryImage = {
 import carouselDataRaw from '../data/Gallery.json';
 const carouselData: CarouselItem[] = carouselDataRaw;
 import galleryData from '../data/GallerySections.json';
+import { getFullImageUrl } from '@/utils/getFullImageUrl';
 
 // Main Component
 const GalleryPage = () => {
@@ -108,7 +109,7 @@ const EnhancedCarousel = ({ mobile = false }: { mobile?: boolean }) => {
             className="absolute inset-0 z-10"
           >
             <img
-              src={carouselData[current].image}
+              src={getFullImageUrl(carouselData[current].image)}
               alt={carouselData[current].text}
               className="w-full h-full object-cover"
               loading="lazy"
@@ -200,7 +201,7 @@ const GalleryCard = memo(({ image, compact = false }: { image: GalleryImage; com
       onMouseLeave={() => setIsHovered(false)}
     >
       <img
-        src={image.url}
+        src={getFullImageUrl(image.url)}
         alt={image.caption}
         className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
         loading="lazy"

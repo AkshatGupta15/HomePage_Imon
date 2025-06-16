@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import projectData from "../data/Projects.json";
 import { SEO } from "@/components/custom/seo_helmet";
+import { getFullImageUrl } from "@/utils/getFullImageUrl";
 
 export default function ProjectsSection() {
   return (
@@ -30,7 +31,7 @@ export default function ProjectsSection() {
             whileHover={{ scale: 1.02 }}
           >
             <img
-              src={project.image}
+              src={getFullImageUrl(project.image)}
               alt={project.title}
               className="w-full h-48 object-cover"
             />

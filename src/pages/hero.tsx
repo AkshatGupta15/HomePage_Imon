@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { BoxReveal } from "@/components/magicui/box-reveal";
+import { getFullImageUrl } from "@/utils/getFullImageUrl";
 
 export function Hero() {
   const [show, setShow] = useState(false);
@@ -27,7 +28,7 @@ export function Hero() {
       <BoxReveal boxColor={"#5046e6"} duration={0.5}>
         <div className="overflow-hidden rounded-2xl shadow-xl w-48 h-48 sm:w-60 sm:h-60 relative">
           <img
-            src="https://media.licdn.com/dms/image/v2/C4D03AQFp5L6ohcHXhQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516952967456?e=2147483647&v=beta&t=z8jyf-5m46hI94njTgvpIo61dcn694G8D-XjFV-O68E"
+            src={getFullImageUrl("/images/dp.jpeg")}
             alt="Prof. Imon Mondal"
             className="w-48 h-48 sm:w-60 sm:h-60 object-cover rounded-2xl shadow-xl"
           />
