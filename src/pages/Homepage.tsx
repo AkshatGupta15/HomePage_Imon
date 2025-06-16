@@ -18,7 +18,7 @@ export function HomePage() {
           transition={{ duration: 0.6 }}
           className="max-w-5xl mx-auto space-y-6 text-justify break-words p-4 sm:p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100"
         >
-          <p className="text-xs sm:text-sm md:text-lg leading-relaxed lora-regular-400">
+          <p className="text-sm md:text-lg leading-relaxed lora-regular-400">
             I am an assistant professor in the Microelectronics and VLSI group of the
             department of Electrical Engineering in the Indian Institute of
             Technology Kanpur and a member of the{' '}
@@ -40,7 +40,7 @@ export function HomePage() {
             </a>.
           </p>
 
-          <p className="text-xs sm:text-sm md:text-lg leading-relaxed lora-regular-400">
+          <p className="text-sm md:text-lg leading-relaxed lora-regular-400">
             I obtained my Ph.D. from IIT Madras under Prof. Nagendra Krishnapura,
             working on tunable true-time-delay elements in ICs. I received my M.Tech from IIT Kanpur (2007)
             and B.Tech from Kalyani Govt. Engineering College (2005). I have worked at
@@ -55,7 +55,7 @@ export function HomePage() {
           className="max-w-5xl mx-auto mt-12 p-4 sm:p-6 space-y-4 shadow-lg rounded-lg"
         >
           <h2 className="text-lg sm:text-xl lora-bold-500 mb-4">News & Updates</h2>
-          <div className="space-y-3 text-xs sm:text-sm text-left leading-relaxed overflow-scroll h-80">
+          <div className="space-y-3 text-sm text-left leading-relaxed overflow-scroll h-80">
             {data.map((item, index) => (
               <div key={index} className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition duration-300 border-l-4 border-blue-500">
                 <p className="text-gray-600 lora-regular-400">
@@ -70,7 +70,7 @@ export function HomePage() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="max-w-5xl mx-auto mt-12 p-4 sm:p-6 grid md:grid-cols-2 gap-8 text-xs sm:text-sm text-gray-800"
+          className="max-w-5xl mx-auto mt-12 p-4 sm:p-6 grid md:grid-cols-2 gap-8 text-sm text-gray-800"
         >
           <div className="space-y-2">
             <h3 className="font-semibold text-lg sm:text-xl lora-bold-500">Coordinates</h3>

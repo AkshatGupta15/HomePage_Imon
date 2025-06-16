@@ -91,7 +91,7 @@ const ContactForm = () => {
         {/* Left Side - Contact Info */}
         <div>
           <h2 className="text-slate-900 text-2xl md:text-3xl font-bold uppercase lora-bold-700">Contact</h2>
-          <p className="text-xs sm:text-sm md:text-lg text-slate-600 mt-4 leading-relaxed lora-regular-400">
+          <p className="text-sm md:text-lg text-slate-600 mt-4 leading-relaxed lora-regular-400">
             Feel free to reach out by visiting my office,
              dropping an email, or submitting the contact
               form to get in touch regarding research, projects, or collaborations.

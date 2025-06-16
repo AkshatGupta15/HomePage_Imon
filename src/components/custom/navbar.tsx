@@ -95,7 +95,7 @@ export function CustomNavbar({ prop }: { prop?: ReactNode }) {
       target="_blank"
       rel="noopener noreferrer"
       onClick={() => setIsMobileMenuOpen(false)}
-      className={`relative block text-md ${
+      className={`relative block text-md lora-regular-400 ${
         isActive ? "text-indigo-600" : "text-neutral-600"
       }`}
     >
@@ -106,7 +106,7 @@ export function CustomNavbar({ prop }: { prop?: ReactNode }) {
       key={`mobile-link-${idx}`}
       to={item.link}
       onClick={() => setIsMobileMenuOpen(false)}
-      className={`relative block text-md ${
+      className={`relative block text-md lora-regular-400 ${
         isActive ? "text-indigo-600" : "text-neutral-600"
       }`}
     >
@@ -115,7 +115,7 @@ export function CustomNavbar({ prop }: { prop?: ReactNode }) {
   );
 })}
 
-            <div className="flex w-full flex-col gap-4">
+            {/* <div className="flex w-full flex-col gap-4">
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
@@ -124,7 +124,7 @@ export function CustomNavbar({ prop }: { prop?: ReactNode }) {
                 Contact
               </NavbarButton>
       
-            </div>
+            </div> */}
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
