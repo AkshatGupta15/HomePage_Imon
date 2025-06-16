@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import lectures from "../data/lectures.json";
-import courses from "../data/courses.json";
+import courses from "../data/Courses.json";
 import { SEO } from "@/components/custom/seo_helmet";
 
 export function TeachingPage() {
