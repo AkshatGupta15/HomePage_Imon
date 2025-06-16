@@ -4,6 +4,6 @@
  * @returns Full URL with base path prepended
  */
 export function getFullImageUrl(path: string): string {
-  const base = import.meta.env.BASE_URL || "/~imon/";
+  const base = import.meta.env.BASE_URL;
   return `${base.replace(/\/$/, "")}/${path.replace(/^\/+/, "")}`;
 }

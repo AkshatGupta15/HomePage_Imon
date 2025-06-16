@@ -31,7 +31,7 @@ export function ResearchPage() {
         <p className="justify-evenly break-words lora-regular-400 "> If you are intersted in working with me, do apply for research positions through the
           <a href="https://www.iitk.ac.in/doaa/" className="text-blue-600 underline hover:text-blue-800"> IITK portal</a>, and send me your C.V. There are open research positions
           both for M.S. and Ph.D. candidates. You can learn more about the programs
-          <a href="ProspectiveStudents.html" className="text-blue-600 underline hover:text-blue-800" > here. </a> </p>
+          <a href={getFullImageUrl("student_research")} className="text-blue-600 underline hover:text-blue-800" > here. </a> </p>
       </motion.div>
       <h2 className="text-xl font-bold  text-gray-500 mb-12  lora-bold-700 uppercase">Research Projects</h2>
 

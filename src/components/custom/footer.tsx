@@ -1,3 +1,4 @@
+import { getFullImageUrl } from '@/utils/getFullImageUrl';
 import React from 'react';
 
 const Footer: React.FC = () => {
@@ -79,7 +80,7 @@ const Footer: React.FC = () => {
                         If you're passionate about RFIC Design, Signal Processing, or related areas, reach out with your CV. Undergraduate, postgraduate, and research collaboration opportunities are open.
                     </p>
                     <a
-                        href="/student_research"
+                        href={getFullImageUrl("student_research")}
                         className="inline-flex items-center px-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded-md text-white transition-colors text-sm"
                     >
                         Contact for Research
