@@ -1,0 +1,56 @@
+[
+  {
+    "period": "2023-2026",
+    "sponsor": "Department of Science and Technology (DST), India",
+    "title": "Neural Interfaces for Assistive Technologies in Cognitive Impairment",
+    "amount": "₹ 85.50 Lacs",
+    "role": "PI",
+    "status": "Running",
+    "image": "/images/projects/1.png"
+  },
+  {
+    "period": "2022-2025",
+    "sponsor": "I-Hub Foundation for Robotics, IIT Bombay",
+    "title": "Haptic-Enabled Telepresence Robot for Rural Healthcare",
+    "amount": "₹ 72.30 Lacs",
+    "role": "Co-PI",
+    "status": "Running",
+    "image": "/images/projects/2.jpeg"
+  },
+  {
+    "period": "2021-2024",
+    "sponsor": "Ministry of Education, Govt. of India",
+    "title": "Emotion Recognition using EEG and ML: Applications in EdTech",
+    "amount": "₹ 38.00 Lacs",
+    "role": "PI",
+    "status": "Running",
+    "image": "/images/projects/3.jpg"
+  },
+  {
+    "period": "2020-2022",
+    "sponsor": "SERB (Science and Engineering Research Board)",
+    "title": "AI-Driven Voice Rehabilitation Tool for Post-Stroke Patients",
+    "amount": "₹ 29.75 Lacs",
+    "role": "PI",
+    "status": "Completed",
+    "image": "/images/projects/2.jpeg"
+  },
+  {
+    "period": "2019-2021",
+    "sponsor": "IIT Kanpur Seed Grant",
+    "title": "Design of Autonomous Navigation for Service Robots in Hospitals",
+    "amount": "₹ 18.90 Lacs",
+    "role": "PI",
+    "status": "Completed",
+    "image": "/images/projects/3.jpg"
+  },
+  {
+    "period": "2023-2026",
+    "sponsor": "Department of Science and Technology (DST), India",
+    "title": "Neural Interfaces for Assistive Technologies in Cognitive Impairment",
+    "amount": "₹ 85.50 Lacs",
+    "role": "PI",
+    "status": "Running",
+    "image": "/images/projects/1.png"
+  }
+]

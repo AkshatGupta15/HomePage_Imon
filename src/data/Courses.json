@@ -1,0 +1,13 @@
+[
+  {
+    "code": "EE698L",
+    "title": "RFIC Design",
+    "timings": "Tuesday: 10:30–11:45 AM; Thursday: 12–1:15 PM",
+    "grading": [
+      { "component": "Home Assignment", "weight": "60%" },
+      { "component": "End Semester", "weight": "25%" },
+      { "component": "Midsem", "weight": "10%" },
+      { "component": "Surprise Quiz", "weight": "5%" }
+    ]
+  }
+]

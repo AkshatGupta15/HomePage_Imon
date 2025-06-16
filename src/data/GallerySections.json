@@ -1,0 +1,70 @@
+[
+  {
+    "title": "Research Projects",
+    "images": [
+      {
+        "url": "/images/gallery/1.jpeg",
+        "caption": "Nanotechnology Lab",
+        "description": "Our team working on advanced nanomaterials"
+      },
+      {
+        "url": "/images/gallery/2.jpeg",
+        "caption": "Energy Systems",
+        "description": "Renewable energy research project"
+      },
+      {
+        "url": "/images/gallery/2.jpeg",
+        "caption": "AI Research",
+        "description": "Machine learning applications in power systems"
+      },
+      {
+        "url": "/images/gallery/1.jpeg",
+        "caption": "Circuit Design",
+        "description": "Next-generation integrated circuits"
+      },
+      {
+        "url": "/images/gallery/1.jpeg",
+        "caption": "Field Work",
+        "description": "Data collection in rural areas"
+      },
+      {
+        "url": "/images/gallery/1.jpeg",
+        "caption": "Prototype Testing"
+      },
+      {
+        "url": "/images/gallery/1.jpeg",
+        "caption": "Field Work",
+        "description": "Data collection in rural areas"
+      },
+      {
+        "url": "/images/gallery/1.jpeg",
+        "caption": "Prototype Testing"
+      }
+    ]
+  },
+  {
+    "title": "Conferences & Events",
+    "images": [
+      {
+        "url": "/images/gallery/1.jpeg",
+        "caption": "IEEE Conference 2023",
+        "description": "Keynote speech on emerging technologies"
+      },
+      {
+        "url": "/images/gallery/1.jpeg",
+        "caption": "Workshop Demonstration"
+      },
+      {
+        "url": "/images/gallery/1.jpeg",
+        "caption": "Panel Discussion",
+        "description": "Future of electrical engineering"
+      },
+      {
+        "url": "/images/gallery/1.jpeg",
+        "caption": "Award Ceremony"
+      }
+    ]
+  }
+  
+  
+]

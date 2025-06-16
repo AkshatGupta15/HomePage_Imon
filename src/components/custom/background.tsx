@@ -4,7 +4,7 @@ import { Hero } from "@/pages/hero";
 
 export function AnimatedGridPatternDemo() {
   return (
-    <div className="mt-[-120px] relative flex h-screen w-full items-center justify-center overflow-hidden rounded-lg border bg-background">
+    <div className="px-4 mt-[-120px] relative flex h-screen w-full items-center justify-center overflow-hidden rounded-lg border bg-background">
       <AnimatedGridPattern
         numSquares={30}
         maxOpacity={0.1}

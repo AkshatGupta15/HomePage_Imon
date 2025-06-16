@@ -1,22 +1,22 @@
 [
   {
     "title": "A 2 GHz bandwidth, 0.25-1.7 ns true-time-delay element using a variable-order all-pass filter architecture in 0.13 μm CMOS",
-    "image": "images/APF1.png",
+    "image": "images/research/APF1.png",
     "description": "In this work we designed and demonstrated wide-band true-time-delay lines using integrated circuit Gm-C filters. The proposed architecture achieved state-of-the-art delay-bandwidth product among all the true-time-delay lines hitherto reported at the time of publication."
   },
   {
     "title": "Expansion and compression of analog pulses using bandwidth switching of continuous-time filters",
-    "image": "images/Expansion.png",
+    "image": "images/research/Expansion.png",
     "description": "This work was a first demonstration of an integrated circuit implementation of expansion and compression of continuous-time, wideband analog pulses. Pulse expansion and compression factors of 1.8x and 1.7x respectively were demonstrated using electronically controlled bandwidth switching of Gm-C filters."
   },
   {
     "title": "Gain enhanced high frequency OTA with on-chip tuned negative conductance load",
-    "image": "images/OTA1.png",
+    "image": "images/research/OTA1.png",
     "description": "This work proposed a transconductor architecture useful for wideband Gm-C filters which can achieve large unity gain frequency without compromising DC gain. An automatically controlled, incremental negative conductance load was designed to cancel the incremental positive conductance of the transconductor across process, voltage and temperature variation."
   },
   {
     "title": "Linearity and gain enhanced wideband transconductor using digitally auto-tuned negative conductance load",
-    "image": "images/OTA2.png",
+    "image": "images/research/OTA2.png",
     "description": "This work proposed a voltage biased transconductor with improved linearity (higher signal handling capacity) and high DC gain using a digitally auto-tuned negative conductance load."
   }
 ]

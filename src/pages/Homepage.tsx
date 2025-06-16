@@ -1,6 +1,7 @@
 import { AnimatedGridPatternDemo } from "@/components/custom/background";
 import { motion } from "framer-motion";
 import data from "@/data/news.json";
+import ContactForm from "./contactPage";
 
 export function HomePage() {
   return (
@@ -13,7 +14,7 @@ export function HomePage() {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-4xl mx-auto space-y-6 text-justify break-words" 
+        className="max-w-5xl mx-auto space-y-6 text-justify break-words p-8 rounded-2xl shadow-sm border border-gray-100" 
       >
         <p className="text-lg leading-relaxed lora-regular-400">
           I am an assistant professor in the Microelectronics and VLSI group of the
@@ -49,13 +50,13 @@ export function HomePage() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="max-w-5xl mx-auto mt-12  p-6  space-y-4"
+        className="max-w-5xl mx-auto mt-12  p-6  space-y-4 shadow-lg  rounded-lg"
       >
-        <h2 className="text-xl lora-bold-500 ">News & Updates</h2>
+        <h2 className="text-xl lora-bold-500 mb-4">News & Updates</h2>
         {/* <AutoScrollingNews/> */}
         <div className="space-y-3 text-sm text-left leading-relaxed overflow-scroll h-80">
           {data.map((item, index) => (
-            <div key={index} className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition duration-300">
+            <div key={index} className="p-4 bg-white rounded-lg shadow hover:shadow-lg transition duration-300 border-l-4 border-blue-500">
               
               <p className="text-gray-600 lora-regular-400"><span className="text-md lora-bold-500 text-gray-800">{item.date}</span> : {item.text}</p>
               
@@ -83,12 +84,13 @@ export function HomePage() {
         <div className="space-y-2">
           <h3 className="font-semibold text-xl lora-bold-500">Other Links</h3>
           <ul className="list-disc list-inside lora-regular-400">
-            <li><a href="#" className="text-blue-600 hover:underline">Research Interests</a></li>
-            <li><a href="#" className="text-blue-600 hover:underline">Call for Research Students</a></li>
+            <li><a href="/research" className="text-blue-600 hover:underline">Research Interests</a></li>
+            <li><a href="/student_research" className="text-blue-600 hover:underline">Call for Research Students</a></li>
           </ul>
         </div>
       </motion.div>
       </div>
+      <ContactForm/>
 
       
     </div>
