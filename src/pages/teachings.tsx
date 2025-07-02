@@ -1,16 +1,18 @@
-import { motion } from "framer-motion";
+/* eslint-disable react-hooks/rules-of-hooks */
+import { motion, AnimatePresence } from "framer-motion";
 import lectures from "../data/lectures.json";
 import courses from "../data/Courses.json";
 import { SEO } from "@/components/custom/seo_helmet";
+import { useState } from "react";
 
 export function TeachingPage() {
   return (
     <div className="max-w-screen-5xl py-4 min-h-screen">
       <SEO
-  title="Teaching | Imon Mondal"
-  description="Lecture series, grading, and materials for EE698L and other courses."
-  path="/teaching"
-/>
+        title="Teaching | Imon Mondal"
+        description="Lecture series, grading, and materials for EE698L and other courses."
+        path="/teaching"
+      />
       <main className="container mx-auto px-6 py-10">
         {/* Courses Section */}
         <motion.section
@@ -66,26 +68,49 @@ export function TeachingPage() {
           transition={{ delay: 0.5 }}
         >
           <h3 className="text-xl font-semibold uppercase lora-bold-500 mb-6">Lecture Videos</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-white p-6 rounded-lg shadow">
-            {lectures.map(([title, id], idx) => (
-              <div key={idx} className="space-y-2">
-                <p className="lora-regular-400 font-medium text-sm md:text-base">{title}</p>
-                <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
-                  <iframe
-                    className="absolute top-0 left-0 w-full h-full rounded"
-                    src={`https://www.youtube.com/embed/${id}`}
-                    title={title}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
+          <div className="bg-white p-4 rounded-lg shadow space-y-4">
+            {lectures.map(([title, id], idx) => {
+              const [open, setOpen] = useState(false);
+              return (
+                <div key={idx} className="border rounded-md p-4">
+                  <div
+                    className="flex justify-between items-center cursor-pointer"
+                    onClick={() => setOpen(!open)}
+                  >
+                    <p className="lora-regular-400 font-medium text-sm md:text-base">{title}</p>
+                    <span className="text-blue-600 text-sm">
+                      {open ? "Hide" : "Watch"}
+                    </span>
+                  </div>
+
+                  <AnimatePresence>
+                    {open && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="overflow-hidden mt-3"
+                      >
+                        <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+                          <iframe
+                            className="absolute top-0 left-0 w-full h-full rounded-md"
+                            src={`https://www.youtube.com/embed/${id}`}
+                            title={title}
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </motion.section>
 
-        
+
       </main>
     </div>
   );

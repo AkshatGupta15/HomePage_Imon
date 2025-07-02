@@ -2,31 +2,45 @@
   "conferences": [
     {
       "text": "Mohmad Aasif Bhat and Imon Mondal, \"An LPTV Programmable Bandpass True-time-Delay Line Without External Clock-Phase Shifter,\" To appear in Proc. 2025 IEEE ISCAS, London, 2025.",
-      "link": null
+      "link": null,
+      "description": "This paper introduces a novel framework for mon Mondal and Nagendra Krishnapura, “Effects of AC Response Imperfections in True-Time-Delay Lines,” IEEE TCAS II.",
+      "image": "/images/projects/1.png"
     },
     {
       "text": "Mohmad Aasif Bhat and Imon Mondal, \"A Low-Loss, Compact Wideband True-Time-Delay Line for Sub-6GHz Applications using N-Path Filters,\" Proc. 2023 IEEE APCCAS, Hyderabad, India, 2023.",
-      "link": "https://ieeexplore.ieee.org/abstract/document/10509961/"
+      "link": "https://ieeexplore.ieee.org/abstract/document/10509961/",
+      "description": "This paper introduces a novel framework for mon Mondal and Nagendra Krishnapura, “Effects of AC Response Imperfections in True-Time-Delay Lines,” IEEE TCAS II.",
+      "image": "/images/projects/1.png"
     },
     {
       "text": "Mayank Anupam and Imon Mondal, “A Robust Overdesign Prevention Circuit Technique Under Widely Varying Ambient Conditions,\" Proc. 2023 IEEE APCCAS, Hyderabad, India, 2023.",
-      "link": "https://ieeexplore.ieee.org/abstract/document/10509907"
+      "link": "https://ieeexplore.ieee.org/abstract/document/10509907",
+      "description": "This paper introduces a novel framework for mon Mondal and Nagendra Krishnapura, “Effects of AC Response Imperfections in True-Time-Delay Lines,” IEEE TCAS II.",
+      "image": "/images/projects/1.png"
     },
     {
       "text": "Abhishek Kumar, Shubham Sahay and Imon Mondal, \"An Automatic Leakage Compensation Technique for Capacitively Coupled Class-AB Operational Amplifiers,\" 2023 IEEE ISCAS, Monterey, CA, USA, 2023.",
-      "link": "https://ieeexplore.ieee.org/abstract/document/10181688"
+      "link": "https://ieeexplore.ieee.org/abstract/document/10181688",
+      "description": "This paper introduces a novel framework for mon Mondal and Nagendra Krishnapura, “Effects of AC Response Imperfections in True-Time-Delay Lines,” IEEE TCAS II.",
+      "image": "/images/projects/1.png"
     },
     {
       "text": "Mayank Anupam, Harshit Rathore and Imon Mondal, “Bandwidth-Enhanced Feedforward Amplifier with Shared Class-AB Gain and Compensation Paths,” Proc. 2022 IEEE ISCAS, Austin, USA.",
-      "link": "https://ieeexplore.ieee.org/document/9937883"
+      "link": "https://ieeexplore.ieee.org/document/9937883",
+      "description": "This paper introduces a novel framework for mon Mondal and Nagendra Krishnapura, “Effects of AC Response Imperfections in True-Time-Delay Lines,” IEEE TCAS II.",
+      "image": "/images/projects/1.png"
     },
     {
       "text": "Harshit Rathore and Imon Mondal, “Breaking the trade-off between bandwidth and close-in blocker attenuation in an N-path filter,” Proc. 2021 IEEE ISCAS, Daegu, Korea, 2021.",
-      "link": "https://ieeexplore.ieee.org/document/9401459"
+      "link": "https://ieeexplore.ieee.org/document/9401459",
+      "description": "This paper introduces a novel framework for mon Mondal and Nagendra Krishnapura, “Effects of AC Response Imperfections in True-Time-Delay Lines,” IEEE TCAS II.",
+      "image": "/images/projects/1.png"
     },
     {
       "text": "Imon Mondal, “Analysis and comparison of distortion of Miller and feed-forward opamps in negative feedback,” 2020 IEEE ISCAS, Sevilla, 2020.",
-      "link": "https://ieeexplore.ieee.org/document/9180534"
+      "link": "https://ieeexplore.ieee.org/document/9180534",
+      "description": "This paper introduces a novel framework for mon Mondal and Nagendra Krishnapura, “Effects of AC Response Imperfections in True-Time-Delay Lines,” IEEE TCAS II.",
+      "image": "/images/projects/1.png"
     },
     {
       "text": "Imon Mondal, “Effect of circuit non-idealities on active on-chip delay lines,” 2019 IEEE ISCAS, Sapporo, Japan, May 2019.",
@@ -48,7 +62,9 @@
   "journals": [
     {
       "text": "Imon Mondal and Nagendra Krishnapura, “Effects of AC Response Imperfections in True-Time-Delay Lines,” IEEE TCAS II.",
-      "link": "https://ieeexplore.ieee.org/document/9209153/"
+      "link": "https://ieeexplore.ieee.org/document/9209153/",
+      "description": "This paper introduces a novel framework for mon Mondal and Nagendra Krishnapura, “Effects of AC Response Imperfections in True-Time-Delay Lines,” IEEE TCAS II.",
+      "image": "/images/projects/1.png"
     },
     {
       "text": "Imon Mondal and Nagendra Krishnapura, “Expansion and compression of analog pulses using bandwidth switching of continuous-time filters,” IEEE TCAS I, vol 65, pp. 2703-2714, Feb. 2018.",

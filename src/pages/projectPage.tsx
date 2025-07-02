@@ -5,7 +5,7 @@ import { getFullImageUrl } from "@/utils/getFullImageUrl";
 
 export default function ProjectsSection() {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-12 bg-white">
+    <div className="max-w-6xl mx-auto px-6 py-12 bg-white lora-regular-400">
       <SEO
   title="Projects | Imon Mondal"
   description="Funded and ongoing projects in RF and analog circuit design."

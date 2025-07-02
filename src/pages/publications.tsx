@@ -2,6 +2,7 @@
 import { SEO } from "@/components/custom/seo_helmet";
 import data from "../data/Publication.json";
 import { motion } from "framer-motion";
+import { getFullImageUrl } from "@/utils/getFullImageUrl";
 
 export default function PublicationsPage() {
   return (
@@ -42,7 +43,7 @@ const Section = ({ title, items }: { title: string; items: any[] }) => (
     </h2>
     <ul className="space-y-4 list-inside list-disc text-gray-700">
       {items.map((item: any, index: number) => (
-        <li key={index} className="lora-regular-400 text-sm leading-relaxed">
+        <li key={index} className="relative group lora-regular-400 text-sm leading-relaxed">
           <span>{item.text}</span>
           {item.link && (
             <a
@@ -54,8 +55,25 @@ const Section = ({ title, items }: { title: string; items: any[] }) => (
               [PAPER]
             </a>
           )}
+
+          {/* Hover Description and Image */}
+          {(item.description || item.image) && (
+            <div className="absolute left-0 z-10 hidden group-hover:flex flex-col gap-2 p-4 bg-white border border-gray-200 shadow-xl rounded-md w-72 top-6">
+              {item.image && (
+                <img
+                  src={getFullImageUrl(item.image)}
+                  alt="Publication Preview"
+                  className="w-full h-32 object-cover rounded-md border"
+                />
+              )}
+              {item.description && (
+                <p className="text-xs text-gray-700">{item.description}</p>
+              )}
+            </div>
+          )}
         </li>
       ))}
     </ul>
   </motion.div>
 );
+

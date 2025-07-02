@@ -18,7 +18,7 @@ type GalleryImage = {
 
 
 // Data
-import carouselDataRaw from '../data/Gallery.json';
+import carouselDataRaw from '../data/GalleryCarousel.json';
 const carouselData: CarouselItem[] = carouselDataRaw;
 import galleryData from '../data/GallerySections.json';
 import { getFullImageUrl } from '@/utils/getFullImageUrl';
