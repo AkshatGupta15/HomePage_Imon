@@ -1,0 +1,25 @@
+{
+  "seo": {
+    "title": "Research | Imon Mondal",
+    "description": "Explore Prof. Mondal's research in analog and RFIC design.",
+    "path": "/research"
+  },
+  "intro": {
+    "heading": "Research Interests",
+    "paragraphs": [
+      "I work in the domain of analog circuit design for integrated circuits, primarily aimed at signal processing. This involves conceptualization of the problem statement, designing an analog circuit solution, sending out the chip for fabrication (typically called tape-out), designing the PCB for testing the chip, and finally validating the simulation results through measurement results of the chip. My research work till date has concentrated on design of high frequency analog filters for various applications like design of true-time-delay elements for wideband beamformers on integrated circuits, and expansion and compression of wideband analog pulses.",
+      "If you are interested in working with me, do apply for research positions through the <IITK_PORTAL> and send me your C.V. There are open research positions both for M.S. and Ph.D. candidates. You can learn more about the programs <STUDENT_RESEARCH_PAGE>."
+    ],
+    "links": {
+      "IITK_PORTAL": {
+        "label": "IITK portal",
+        "url": "https://www.iitk.ac.in/doaa/"
+      },
+      "STUDENT_RESEARCH_PAGE": {
+        "label": "here",
+        "url": "/student_research"
+      }
+    }
+  },
+  "projectsHeading": "Research Projects"
+}

@@ -2,38 +2,49 @@ import { motion } from "framer-motion";
 import data from "../data/Research.json";
 import { SEO } from "@/components/custom/seo_helmet";
 import { getFullImageUrl } from "@/utils/getFullImageUrl";
+import content from "@/data/researchPageContent.json";
 
 
 export function ResearchPage() {
+  const { seo, intro, projectsHeading} = content;
+  const { paragraphs, heading, links } = intro;
+
   return (
     <div className="max-w-5xl container mx-auto px-4 py-10 md:w-[80%] w-full ">
-      <SEO
-  title="Research | Imon Mondal"
-  description="Explore Prof. Mondal's research in analog and RFIC design."
-  path="/research"
-/>
+      <SEO title={seo.title} description={seo.description} path={seo.path} />
+
+      {/* Research Interests Section */}
       <motion.div
         className="mb-10"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h1 className="text-2xl font-bold text-gray-700 mb-6 lora-bold-700 uppercase">Research Interests</h1>
+        <h1 className="text-2xl font-bold text-gray-700 mb-6 lora-bold-700 uppercase">
+          {heading}
+        </h1>
 
-        <p className=" justify-evenly break-words lora-regular-400"> I work in the domain of analog circuit design for integrated circuits, primarilly aimed at signal processing. This involves
-          conceptualization of the problem statement, designing an analog circuit solution, sending out the chip for fabrication (typically called tape-out), designing
-          the PCB for testing the chip, and finally validating the simulation results through measurement results of the chip.
-          My research work till date has concentrated on design of high frequency analog filters for various applications like
-          design of true-time-delay elements for wideband beamformers on integrated circuits, and  expansion and
-          compression of wideband analog pulses.
+        <p className="justify-evenly break-words lora-regular-400">
+          {paragraphs[0]}
         </p>
         <br />
-        <p className="justify-evenly break-words lora-regular-400 "> If you are intersted in working with me, do apply for research positions through the
-          <a href="https://www.iitk.ac.in/doaa/" className="text-blue-600 underline hover:text-blue-800"> IITK portal</a>, and send me your C.V. There are open research positions
-          both for M.S. and Ph.D. candidates. You can learn more about the programs
-          <a href={getFullImageUrl("student_research")} className="text-blue-600 underline hover:text-blue-800" > here. </a> </p>
+        <p className="justify-evenly break-words lora-regular-400">
+  If you are interested in working with me, do apply for research positions through the{" "}
+  <a href={links.IITK_PORTAL.url} className="text-blue-600 underline hover:text-blue-800">
+    {links.IITK_PORTAL.label}
+  </a>{" "}
+  and send me your C.V. There are open research positions both for M.S. and Ph.D. candidates. You can learn more about the programs{" "}
+  <a href={links.STUDENT_RESEARCH_PAGE.url} className="text-blue-600 underline hover:text-blue-800">
+    {links.STUDENT_RESEARCH_PAGE.label}
+  </a>.
+</p>
+
       </motion.div>
-      <h2 className="text-xl font-bold  text-gray-500 mb-12  lora-bold-700 uppercase">Research Projects</h2>
+
+      {/* Research Projects Section */}
+      <h2 className="text-xl font-bold text-gray-500 mb-12 lora-bold-700 uppercase">
+        {projectsHeading}
+      </h2>
 
       <div className="space-y-16">
         {data.map((project, index) => (
